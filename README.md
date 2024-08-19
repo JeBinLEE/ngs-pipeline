@@ -1,6 +1,16 @@
+
+
 # ngs-pipeline
+This project is a modified version of the original software by Tomas Bencomo.
 
 Somatic variant calling pipeline for whole exome and whole genome sequencing (WES & WGS). The pipeline uses Mutect2 to identify variants and mostly follows GATK Best Practices. SLURM execution functionality allows the workflow to run on Stanford's Sherlock computing cluster.
+
+## Original License
+This software is licensed under the MIT License (see LICENSE file for details).
+
+## Modifications
+- [Your Name], 2024
+- Description of the modifications you've made (e.g., added feature X, fixed bug Y, optimized Z).
 
 # Prerequisites
 # References
