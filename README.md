@@ -48,4 +48,4 @@ multiqc_report.html includes quality metrics like coverage for the fully process
 
 
 # Citations
-This pipeline is based on dna-seq-gatk-variant-calling by Johannes Köster. If you use ngs-pipeline, please use citations.md to cite the necessary software tools.
+This pipeline is based on dna-seq-gatk-variant-calling by [Johannes Köster](https://github.com/snakemake-workflows/dna-seq-gatk-variant-calling). If you use ngs-pipeline, please use citations.md to cite the necessary software tools.
