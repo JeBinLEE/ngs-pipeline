@@ -25,11 +25,6 @@ Snakemake is required to run the pipeline. It is recommended users have Singular
 1. Clone this repository or create a new repository using this workflow as a template
 2. Edit patients.csv and units.csv with the details for your analysis. See the schemas/ directory for details about each file.
 3. Configure config.yml. See schemas/config.schema.yaml for info about each required field. Multiplexed samples should be differentiated with the readgroup column. Sequencing data must be paired, so both fq1 and fq2 are required.
-4. Set up the conda environment using the snakemake.yml file.
-5. 
-   ```
-   conda env create -f snakemake.yml
-   ```
 
 # Usage
 After finishing the setup, inside the repo's base directory with Snakefile do a dry run to check for errors
