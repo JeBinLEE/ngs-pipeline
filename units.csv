@@ -1,0 +1,7 @@
+patient,sample,platform,readgroup,fq1,fq2,seqtype
+patient1,tumor,ILLUMNIA,rg1,/path/data/fastq/pat1_tumor_1.fastq.gz,/path/data/fastq/pat1_tumor_2.fastq.gz,WES
+patient1,normal,ILLUMNIA,rg1,/path/data/fastq/pat1_normal_1.fastq.gz,/path/data/fastq/pat1_normal_2.fastq.gz,WES
+patient2,tumor,ILLUMNIA,rg1,/path/data/fastq/pat2_tumor_1.fastq.gz,/path/data/fastq/pat2_tumor_2.fastq.gz,WES
+patient2,normal,ILLUMNIA,rg1,/path/data/fastq/pat2_normal_1.fastq.gz,/path/data/fastq/pat2_normal_2.fastq.gz,WES
+patient3,tumor,ILLUMNIA,rg1,/path/data/fastq/pat3_tumor_1.fastq.gz,/path/data/fastq/pat3_tumor_2.fastq.gz,WES
+patient3,normal,ILLUMNIA,rg1,/path/data/fastq/pat3_normal_1.fastq.gz,/path/data/fastq/pat3_normal_2.fastq.gz,WES
