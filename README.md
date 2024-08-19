@@ -1,22 +1,15 @@
-
-
 # ngs-pipeline
-This project is a modified version of the original software by Tomas Bencomo.
+This project is a modified version of the original software by [Tomas Bencomo](https://github.com/tjbencomo/ngs-pipeline).
 
 Somatic variant calling pipeline for whole exome and whole genome sequencing (WES & WGS). The pipeline uses Mutect2 to identify variants and mostly follows GATK Best Practices. SLURM execution functionality allows the workflow to run on Stanford's Sherlock computing cluster.
 
 ## Original License
 This software is licensed under the MIT License (see LICENSE file for details).
 
-## Modifications
-- [Your Name], 2024
-- Description of the modifications you've made (e.g., added feature X, fixed bug Y, optimized Z).
-
 # Prerequisites
 # References
-You'll need a reference genome. The GRCh38 (hg38) genome is available on the Broad's GATK website.
-
-You'll also need the cache files for Variant Annotation Predictor (VEP). Follow the tutorial here to download the data files. By default, the pipeline uses a docker container with VEP v104 and VCF2MAF for variant annotation. It is suggested you use v104 cache files. You can use your own version of VEP/VCF2MAF by modifying the vep_env field in config.yaml.
+You'll need a reference genome. The GRCh38 (hg38) genome is available on the Broad's GATK [website](https://gatk.broadinstitute.org/hc/en-us/articles/360035890811-Resource-bundle) .
+You can obtain a .BED file containing the necessary WES region information from [here](https://genome.ucsc.edu/cgi-bin/hgTables).
 
 # Input Files
 The pipeline takes paired end (PE) FASTQ files as input. Samples can be normal-tumor pairs or tumor-only individual sample. Samples can be divided into multiple read groups (see units.csv) or one pair of FASTQ files per sample.
