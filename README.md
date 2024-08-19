@@ -41,7 +41,7 @@ The pipeline produces two key files: mafs/variants.maf and qc/multiqc_report.htm
 
 variants.maf includes somatic variants from all samples that passed Mutect2 filtering. They have been annotated with VEP and a single effect has been chosen by vcf2maf using the Ensembl database. Ensembl uses its canonical isoforms for effect selection. Other isoforms can be specified with the alternate_isoforms field in config.yaml. See the cBioPortal override isoforms for file formatting.
 
-multiqc_report.html includes quality metrics like coverage for the fully processed BAM files. Individual VCF files for each sample prior VEP annotation are found as vcfs/{patient}.vcf. VEP annotated VCFs are found as vcfs/{patient}.vep.vcf. qc/depths.svg shows the sequencing depth distribution for normal and tumor samples.
+multiqc_report.html includes quality metrics like coverage for the fully processed BAM files. Individual VCF files for each sample prior VEP annotation are found as vcfs/{patient}.vcf. VEP annotated VCFs are found as vcfs/{patient}.vep.vcf.
 
 
 
