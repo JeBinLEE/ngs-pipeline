@@ -9,7 +9,7 @@ This software is licensed under the MIT License (see LICENSE file for details).
 # Prerequisites
 # References
 You'll need a reference genome. The GRCh38 (hg38) genome is available on the Broad's GATK [website](https://gatk.broadinstitute.org/hc/en-us/articles/360035890811-Resource-bundle) .
-You can obtain a .BED file containing the necessary WES region information from [here](https://genome.ucsc.edu/cgi-bin/hgTables).
+You can obtain a .BED file containing the necessary WES region information from [UCSC Table Browser](https://genome.ucsc.edu/cgi-bin/hgTables).
 
 # Input Files
 The pipeline takes paired end (PE) FASTQ files as input. Samples can be normal-tumor pairs or tumor-only individual sample. Samples can be divided into multiple read groups (see units.csv) or one pair of FASTQ files per sample.
