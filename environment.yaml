@@ -1,0 +1,15 @@
+name: ngs-pipeline
+
+channels:
+  - bioconda
+  - conda-forge
+  - defaults
+
+dependencies:
+  - python =3.9.19
+  - pandas =2.0.3
+  - snakemake =5.9.1
+  - pyyaml =6.0.1
+  - yaml =0.2.5
+  - conda
+  - singularity =3.8.6
