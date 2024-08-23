@@ -11,6 +11,25 @@ This software is licensed under the MIT License (see LICENSE file for details).
 You'll need a reference genome. The GRCh38 (hg38) genome is available on the Broad's GATK [website](https://gatk.broadinstitute.org/hc/en-us/articles/360035890811-Resource-bundle) .
 You can obtain a .BED file containing the necessary WES region information from [UCSC Table Browser](https://genome.ucsc.edu/cgi-bin/hgTables).
 
+## Generating Index Files from GRCH38 genome
+Make sure you have the following tools installed:
+
+- Samtools
+- BWA (Burrows-Wheeler Aligner)
+
+### Step 1: Generate the .fai File
+The .fai file is an index file for the FASTA format and can be generated using samtools.
+
+```
+samtools faidx Homo_sapiens.GRCh38.dna_sm.primary_assembly.fa
+```
+
+### Step 2: Generate the Remaining Index Files
+The remaining index files (.amb, .ann, .bwt, .pac, .sa) can be generated using bwa.
+
+```
+bwa index Homo_sapiens.GRCh38.dna_sm.primary_assembly.fa
+```
 # Input Files
 The pipeline takes paired end (PE) FASTQ files as input. Samples can be normal-tumor pairs or tumor-only individual sample. Samples can be divided into multiple read groups (see units.csv) or one pair of FASTQ files per sample.
 
